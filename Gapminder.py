@@ -119,11 +119,19 @@ region_colors = {
     "Other": "#999999"
 }
 
+label_positions = [
+    "top center",
+    "bottom center",
+    "middle right",
+    "middle left"
+]
+
 # =========================
 # DASH APP
 # =========================
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div(
     style={"fontFamily": "Arial", "margin": "0", "padding": "0"},
@@ -131,17 +139,14 @@ app.layout = html.Div(
         html.Div(
             style={"display": "flex", "height": "100vh"},
             children=[
-                # =========================
-                # SIDEBAR
-                # =========================
-
                 html.Div(
                     style={
                         "width": "330px",
                         "padding": "20px",
                         "borderRight": "1px solid #dddddd",
                         "boxSizing": "border-box",
-                        "overflowY": "auto"
+                        "overflowY": "auto",
+                        "backgroundColor": "#f8f9fb"
                     },
                     children=[
                         html.Label("Regions", style={"fontWeight": "bold"}),
@@ -149,10 +154,11 @@ app.layout = html.Div(
                         dcc.Dropdown(
                             id="region-dropdown",
                             options=region_options,
-                            value=["All"],
+                            value=[],
                             multi=True,
                             clearable=True,
                             searchable=True,
+                            placeholder="Choose region(s)...",
                             style={"marginTop": "6px"}
                         ),
 
@@ -226,10 +232,6 @@ app.layout = html.Div(
                     ]
                 ),
 
-                # =========================
-                # MAIN AREA
-                # =========================
-
                 html.Div(
                     style={
                         "flex": "1",
@@ -238,7 +240,7 @@ app.layout = html.Div(
                     },
                     children=[
                         html.H1(
-                            "Global Health Transition and Sex-Based Infant Mortality Inequality",
+                            "Global Health Transition and Infant Mortality Inequality",
                             style={
                                 "textAlign": "center",
                                 "fontSize": "28px",
@@ -258,7 +260,7 @@ app.layout = html.Div(
 
                         dcc.Interval(
                             id="interval",
-                            interval=650,
+                            interval=850,
                             n_intervals=0,
                             disabled=True
                         ),
@@ -296,7 +298,6 @@ app.layout = html.Div(
 def toggle_play(n_clicks, disabled):
     if n_clicks == 0:
         return True
-
     return not disabled
 
 
@@ -308,7 +309,6 @@ def toggle_play(n_clicks, disabled):
 def animate_year(n_intervals, current_year):
     if current_year >= 2024:
         return 1960
-
     return current_year + 1
 
 
@@ -323,19 +323,26 @@ def update_graph(selected_regions, selected_countries, selected_year):
     if selected_countries is None:
         selected_countries = []
 
-    # If no regions selected, show an empty chart
+    if selected_regions is None:
+        selected_regions = []
+
+    # This makes Plotly preserve the user's zoom/pan while the year changes.
+    # It only resets when country or region filters change.
+    filter_key = "|".join(sorted(selected_regions)) + "||" + "|".join(sorted(selected_countries))
+
+    # Region filter controls background points only.
     if not selected_regions:
-        plot_data = df.iloc[0:0].copy()
+        background_data = df.iloc[0:0].copy()
     else:
-        plot_data = df.copy()
+        background_data = df.copy()
 
         if "All" not in selected_regions:
-            plot_data = plot_data[
-                plot_data["region"].isin(selected_regions)
+            background_data = background_data[
+                background_data["region"].isin(selected_regions)
             ]
 
-    current_data = plot_data[
-        plot_data["year"] == selected_year
+    current_background = background_data[
+        background_data["year"] == selected_year
     ].copy()
 
     fig = go.Figure()
@@ -344,11 +351,11 @@ def update_graph(selected_regions, selected_countries, selected_year):
     # BACKGROUND REGION POINTS
     # =========================
 
-    for region in sorted(current_data["region"].dropna().unique()):
+    for region in sorted(current_background["region"].dropna().unique()):
 
-        region_data = current_data[
-            (current_data["region"] == region) &
-            (~current_data["Country Name"].isin(selected_countries))
+        region_data = current_background[
+            (current_background["region"] == region) &
+            (~current_background["Country Name"].isin(selected_countries))
         ]
 
         if region_data.empty:
@@ -361,7 +368,7 @@ def update_graph(selected_regions, selected_countries, selected_year):
                 mode="markers",
                 name=region,
                 marker=dict(
-                    size=region_data["total_mortality"].clip(lower=5, upper=150) / 4,
+                    size=region_data["total_mortality"].clip(lower=8, upper=160) / 3.8,
                     color=region_colors.get(region, "#999999"),
                     opacity=0.35,
                     line=dict(width=0.5, color="white")
@@ -382,18 +389,19 @@ def update_graph(selected_regions, selected_countries, selected_year):
 
     # =========================
     # SELECTED COUNTRY TRAILS
+    # Country selections ignore region filter.
     # =========================
 
-    for country in selected_countries:
+    for i, country in enumerate(selected_countries):
 
-        country_data = plot_data[
-            (plot_data["Country Name"] == country) &
-            (plot_data["year"] <= selected_year)
+        country_data = df[
+            (df["Country Name"] == country) &
+            (df["year"] <= selected_year)
         ].copy()
 
-        current_country = plot_data[
-            (plot_data["Country Name"] == country) &
-            (plot_data["year"] == selected_year)
+        current_country = df[
+            (df["Country Name"] == country) &
+            (df["year"] == selected_year)
         ].copy()
 
         if country_data.empty:
@@ -406,10 +414,10 @@ def update_graph(selected_regions, selected_countries, selected_year):
                 mode="lines",
                 name=f"{country} trail",
                 line=dict(
-                    width=2,
-                    color="#444444"
+                    width=1.8,
+                    color="rgba(90,90,90,0.55)"
                 ),
-                opacity=0.35,
+                opacity=0.45,
                 hoverinfo="skip",
                 showlegend=False
             )
@@ -417,6 +425,7 @@ def update_graph(selected_regions, selected_countries, selected_year):
 
         if not current_country.empty:
             region = current_country["region"].iloc[0]
+            label_position = label_positions[i % len(label_positions)]
 
             fig.add_trace(
                 go.Scatter(
@@ -425,17 +434,17 @@ def update_graph(selected_regions, selected_countries, selected_year):
                     mode="markers+text",
                     name=country,
                     text=[country],
-                    textposition="top center",
+                    textposition=label_position,
                     textfont=dict(
                         size=13,
                         color="#111111",
                         family="Arial Black"
                     ),
                     marker=dict(
-                        size=18,
+                        size=22,
                         color=region_colors.get(region, "#111111"),
-                        opacity=0.95,
-                        line=dict(width=2, color="black")
+                        opacity=1.0,
+                        line=dict(width=2.2, color="black")
                     ),
                     customdata=current_country[
                         ["male_mortality", "female_mortality", "region"]
@@ -449,10 +458,6 @@ def update_graph(selected_regions, selected_countries, selected_year):
                         "Female mortality: %{customdata[1]}<extra></extra>"
                 )
             )
-
-    # =========================
-    # STYLE
-    # =========================
 
     fig.add_hline(
         y=0,
@@ -468,26 +473,38 @@ def update_graph(selected_regions, selected_countries, selected_year):
         plot_bgcolor="white",
         paper_bgcolor="white",
 
+        # This prevents the graph from awkwardly re-autoscaling every year.
+        # It only changes when filters change.
+        uirevision=filter_key,
+
         xaxis=dict(
             title="Total infant mortality, deaths per 1,000 live births",
-            range=[0, 230],
+            range=[0, 250],
+            automargin=True,
             gridcolor="#e6e6e6",
             zeroline=False
         ),
 
         yaxis=dict(
             title="Male − Female infant mortality gap",
-            range=[-10, 32],
+            range=[-10, 35],
+            automargin=True,
             gridcolor="#e6e6e6",
             zeroline=True,
             zerolinecolor="#555555"
         ),
+
 
         legend=dict(
             title="Region / Highlighted Countries",
             x=1.02,
             y=1,
             bgcolor="rgba(255,255,255,0.85)"
+        ),
+
+        transition=dict(
+            duration=500,
+            easing="cubic-in-out"
         ),
 
         margin=dict(l=80, r=230, t=70, b=45)
