@@ -472,17 +472,34 @@ def update_map(
                 go.Scattergeo(
                     lon=[selected_lon],
                     lat=[selected_lat],
+                    mode="markers",
+                    marker=dict(
+                        size=18,
+                        color="#fffdfa",
+                        line=dict(width=2.5, color="#181716"),
+                        symbol="circle"
+                    ),
+                    hoverinfo="skip",
+                    name="Selected country halo",
+                    showlegend=False
+                )
+            )
+
+            fig.add_trace(
+                go.Scattergeo(
+                    lon=[selected_lon],
+                    lat=[selected_lat],
                     mode="markers+text",
                     text=[selected_country],
                     textposition="middle right",
                     textfont=dict(
                         size=14,
-                        color="#181716",
+                        color="#fffdfa",
                         family="Inter, Arial, sans-serif"
                     ),
                     marker=dict(
-                        size=11,
-                        color="#181716",
+                        size=10,
+                        color="#176b5c",
                         line=dict(
                             width=1.5,
                             color="#fffdfa"

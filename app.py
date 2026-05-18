@@ -887,17 +887,34 @@ def update_infant_map(
                 go.Scattergeo(
                     lon=[selected_lon],
                     lat=[selected_lat],
+                    mode="markers",
+                    marker=dict(
+                        size=18,
+                        color=COLORS["surface"],
+                        line=dict(width=2.5, color=COLORS["ink"]),
+                        symbol="circle"
+                    ),
+                    hoverinfo="skip",
+                    name="Selected country halo",
+                    showlegend=False
+                )
+            )
+
+            fig.add_trace(
+                go.Scattergeo(
+                    lon=[selected_lon],
+                    lat=[selected_lat],
                     mode="markers+text",
                     text=[selected_country],
                     textposition="middle right",
                     textfont=dict(
                         size=14,
-                        color=COLORS["ink"],
+                        color=COLORS["surface"],
                         family=FONT_STACK
                     ),
                     marker=dict(
-                        size=11,
-                        color=COLORS["ink"],
+                        size=10,
+                        color=COLORS["accent"],
                         line=dict(
                             width=1.5,
                             color=COLORS["surface"]
