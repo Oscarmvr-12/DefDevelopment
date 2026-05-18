@@ -14,19 +14,17 @@
 
   <style>
     :root {
-      --ink: #171717;
-      --muted: #5f6368;
-      --quiet: #8a8f98;
-      --line: #e8e4dd;
-      --paper: #fbfaf7;
-      --surface: #ffffff;
-      --accent: #1f7a6a;
-      --accent-dark: #16584d;
-      --accent-soft: #e6f2ef;
-      --rose: #b95c62;
-      --gold: #b98b32;
-      --shadow: 0 24px 70px rgba(23, 23, 23, 0.08);
-      --radius: 18px;
+      --ink: #181716;
+      --muted: #6f6b64;
+      --quiet: #918b82;
+      --line: #ded8ce;
+      --paper: #f7f5f0;
+      --surface: #fffdfa;
+      --accent: #176b5c;
+      --accent-dark: #104d43;
+      --accent-soft: #e8f0ed;
+      --shadow: 0 10px 28px rgba(24, 23, 22, 0.045);
+      --radius: 14px;
       color-scheme: light;
     }
 
@@ -36,6 +34,24 @@
 
     html {
       scroll-behavior: smooth;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      width: 100%;
+      height: 3px;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    .scroll-progress-bar {
+      width: 0%;
+      height: 100%;
+      background: var(--accent);
+      transform-origin: left;
     }
 
     body {
@@ -54,7 +70,7 @@
 
     a {
       color: inherit;
-      text-decoration-color: rgba(31, 122, 106, 0.35);
+      text-decoration-color: rgba(23, 107, 92, 0.35);
       text-underline-offset: 4px;
     }
 
@@ -67,8 +83,8 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      border-bottom: 1px solid rgba(232, 228, 221, 0.85);
-      background: rgba(251, 250, 247, 0.88);
+      border-bottom: 1px solid rgba(222, 216, 206, 0.9);
+      background: rgba(247, 245, 240, 0.9);
       backdrop-filter: blur(18px);
     }
 
@@ -123,7 +139,7 @@
     }
 
     .language-toggle button {
-      min-width: 42px;
+      min-width: 86px;
       min-height: 32px;
       border: 0;
       border-radius: 999px;
@@ -135,17 +151,36 @@
       font-weight: 800;
     }
 
+    .language-short {
+      display: none;
+    }
+
     .language-toggle button.is-active {
-      background: var(--ink);
+      background: var(--accent-dark);
       color: white;
     }
 
     .hero {
-      padding: clamp(72px, 12vw, 140px) 0 clamp(48px, 9vw, 100px);
+      position: relative;
+      overflow: hidden;
+      padding: clamp(72px, 11vw, 128px) 0 clamp(48px, 8vw, 90px);
       border-bottom: 1px solid var(--line);
     }
 
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(23, 107, 92, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 107, 92, 0.04) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75), transparent 76%);
+      pointer-events: none;
+    }
+
     .hero-grid {
+      position: relative;
       width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
       display: grid;
@@ -183,7 +218,7 @@
 
     h1 {
       max-width: 900px;
-      font-size: clamp(3.2rem, 8vw, 7rem);
+      font-size: clamp(2.8rem, 6.8vw, 5.8rem);
       font-weight: 800;
     }
 
@@ -230,7 +265,7 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 6px 12px;
-      background: rgba(255, 255, 255, 0.72);
+      background: rgba(255, 253, 250, 0.78);
       color: var(--muted);
       font-size: 0.9rem;
       font-weight: 600;
@@ -242,7 +277,7 @@
     }
 
     .section:nth-child(odd) {
-      background: var(--surface);
+      background: rgba(255, 253, 250, 0.62);
     }
 
     .container {
@@ -271,10 +306,20 @@
       justify-content: center;
       margin-bottom: 18px;
       border-radius: 50%;
-      background: var(--ink);
+      background: var(--accent-dark);
       color: white;
       font-size: 0.9rem;
       font-weight: 800;
+    }
+
+    .section-kicker {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--accent-dark);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
     }
 
     .section-text {
@@ -292,21 +337,44 @@
       margin: 0;
       overflow: hidden;
       border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .figure-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 44px;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .figure-source {
+      color: var(--quiet);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
     }
 
     .figure img {
       width: 100%;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
+      border: 0;
+      border-radius: 0;
       background: var(--surface);
-      box-shadow: var(--shadow);
       transform-origin: center;
       transition: transform 220ms ease, box-shadow 220ms ease;
     }
 
     .figure:hover img {
       transform: scale(1.035);
-      box-shadow: 0 28px 80px rgba(23, 23, 23, 0.12);
     }
 
     .figure-narrow {
@@ -332,7 +400,7 @@
     }
 
     .finding p {
-      color: #34564f;
+      color: var(--accent-dark);
       font-weight: 500;
     }
 
@@ -350,6 +418,22 @@
       display: none;
       justify-content: center;
       margin: -6px 0 18px;
+    }
+
+    .dashboard-mobile-panel {
+      display: none;
+      margin: 18px 0;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .dashboard-mobile-panel p {
+      margin-bottom: 16px;
+      font-size: 0.94rem;
     }
 
     .dashboard-link {
@@ -408,6 +492,14 @@
       text-align: center;
     }
 
+    .dashboard-source {
+      margin-top: 10px;
+      color: var(--quiet);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -421,7 +513,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--surface);
-      box-shadow: 0 12px 40px rgba(23, 23, 23, 0.05);
+      box-shadow: var(--shadow);
     }
 
     .summary-card strong {
@@ -579,8 +671,28 @@
         border-radius: 14px;
       }
 
+      .language-toggle button {
+        min-width: 58px;
+      }
+
+      .language-full {
+        display: none;
+      }
+
+      .language-short {
+        display: inline;
+      }
+
       .dashboard-actions {
-        display: flex;
+        display: none;
+      }
+
+      .dashboard-mobile-panel {
+        display: block;
+      }
+
+      .dashboard-frame {
+        display: none;
       }
 
       .dashboard-large,
@@ -608,6 +720,10 @@
 </head>
 
 <body>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a class="brand" href="#top" data-i18n="brand">Visualizing Global Development</a>
@@ -618,8 +734,11 @@
         <a href="#mortality" data-i18n="navMortality">Mortality</a>
         <a href="#sources" data-i18n="navSources">Sources</a>
         <div class="language-toggle" aria-label="Language selector">
-          <button type="button" class="is-active" data-language="en" aria-pressed="true">EN</button>
-          <button type="button" data-language="ko" aria-pressed="false">KR</button>
+          <button type="button" class="is-active" data-language="en" aria-pressed="true">
+            <span class="language-full">English</span>
+            <span class="language-short">EN</span>
+          </button>
+          <button type="button" data-language="ko" aria-pressed="false">한국어</button>
         </div>
       </div>
     </div>
@@ -652,6 +771,7 @@
         <div class="section-head">
           <div>
             <span class="section-number">A</span>
+            <span class="section-kicker" data-i18n="abstractKicker">Project Overview</span>
             <h2 data-i18n="abstractTitle">Abstract</h2>
           </div>
           <div class="section-text">
@@ -674,6 +794,7 @@
         <div class="section-head">
           <div>
             <span class="section-number">1</span>
+            <span class="section-kicker" data-i18n="fertilityKicker">Demographics</span>
             <h2 data-i18n="fertilityTitle">Fertility and Development</h2>
           </div>
           <div class="section-text">
@@ -685,11 +806,19 @@
 
         <div class="media-grid">
           <figure class="figure">
+            <div class="figure-bar">
+              <span data-i18n="fertilityFrame1">Fertility Pattern</span>
+              <span class="figure-source" data-i18n="figureSourceWdi">World Bank WDI</span>
+            </div>
             <img src="./static/images/fertility1.png" alt="Fertility visualization across countries and development groups">
             <figcaption data-i18n="fertilityCaption1">Figure 1A. Fertility patterns across countries and development groups.</figcaption>
           </figure>
 
           <figure class="figure">
+            <div class="figure-bar">
+              <span data-i18n="fertilityFrame2">Group Comparison</span>
+              <span class="figure-source" data-i18n="figureSourceWdi">World Bank WDI</span>
+            </div>
             <img src="./static/images/fertility2.png" alt="Additional fertility comparison across development groups">
             <figcaption data-i18n="fertilityCaption2">Figure 1B. Additional fertility comparison across development groups.</figcaption>
           </figure>
@@ -708,6 +837,7 @@
         <div class="section-head">
           <div>
             <span class="section-number">2</span>
+            <span class="section-kicker" data-i18n="migrationKicker">Migration</span>
             <h2 data-i18n="migrationTitle">Migrant Share by Development Group</h2>
           </div>
           <div class="section-text">
@@ -718,6 +848,10 @@
         </div>
 
         <figure class="figure figure-narrow">
+          <div class="figure-bar">
+            <span data-i18n="migrationFrame">Migrant Share</span>
+            <span class="figure-source" data-i18n="figureSourceWdi">World Bank WDI</span>
+          </div>
           <img src="./static/images/migrant_share_boxplot.png" alt="Box plot of migrant share by development group">
           <figcaption data-i18n="migrationCaption">Figure 2. International migrant stock as a share of population across development groups.</figcaption>
         </figure>
@@ -735,6 +869,7 @@
         <div class="section-head">
           <div>
             <span class="section-number">3</span>
+            <span class="section-kicker" data-i18n="outliersKicker">Geography</span>
             <h2 data-i18n="outliersTitle">Geographic Distribution of Outliers</h2>
           </div>
           <div class="section-text">
@@ -748,6 +883,10 @@
         </div>
 
         <figure class="figure">
+          <div class="figure-bar">
+            <span data-i18n="outliersFrame">Outlier Map</span>
+            <span class="figure-source" data-i18n="figureSourceWdi">World Bank WDI</span>
+          </div>
           <img src="./static/images/outlier.png" alt="Map of migrant share outliers among developing economies in 2024">
           <figcaption data-i18n="outliersCaption">Figure 3. Geographic distribution of migrant share outliers among developing economies in 2024.</figcaption>
         </figure>
@@ -765,6 +904,7 @@
         <div class="section-head container">
           <div>
             <span class="section-number">4</span>
+            <span class="section-kicker" data-i18n="mortalityKicker">Health Transition</span>
             <h2 data-i18n="mortalityTitle">Interactive Infant Mortality Visualizations</h2>
           </div>
           <div class="section-text">
@@ -784,10 +924,15 @@
           <div class="dashboard-actions">
             <a class="dashboard-link" href="https://cds-301-birthrate.onrender.com" target="_blank" rel="noopener" data-i18n="openDashboard">Open dashboard</a>
           </div>
+          <div class="dashboard-mobile-panel">
+            <p data-i18n="dash1Mobile">This interactive dashboard works best in a full browser view on phones.</p>
+            <a class="dashboard-link" href="https://cds-301-birthrate.onrender.com" target="_blank" rel="noopener" data-i18n="openDashboard">Open dashboard</a>
+          </div>
           <div class="dashboard-frame dashboard-large">
             <iframe title="Infant Mortality Dash App" src="https://cds-301-birthrate.onrender.com"></iframe>
           </div>
-          <p class="dashboard-note" data-i18n="dash1Note">On phones, swipe inside the dashboard to see the full chart. If it loads slowly, wait a few moments for the hosted app to wake up.</p>
+          <p class="dashboard-source" data-i18n="dash1Source">Source: World Bank World Development Indicators, 1960-2024.</p>
+          <p class="dashboard-note" data-i18n="dash1Note">If the dashboard loads slowly, wait a few moments for the hosted app to wake up.</p>
         </div>
 
         <div class="dashboard-block">
@@ -800,10 +945,15 @@
           <div class="dashboard-actions">
             <a class="dashboard-link" href="./static/dashboards/MaleVFemale.html" target="_blank" rel="noopener" data-i18n="openDashboard">Open dashboard</a>
           </div>
+          <div class="dashboard-mobile-panel">
+            <p data-i18n="dash2Mobile">Open the dashboard directly for the clearest mobile view.</p>
+            <a class="dashboard-link" href="./static/dashboards/MaleVFemale.html" target="_blank" rel="noopener" data-i18n="openDashboard">Open dashboard</a>
+          </div>
           <div class="dashboard-frame dashboard-medium">
             <iframe title="Male Female Infant Mortality Gap" src="./static/dashboards/MaleVFemale.html"></iframe>
           </div>
-          <p class="dashboard-note" data-i18n="dash2Note">On phones, swipe inside the dashboard to see the full chart.</p>
+          <p class="dashboard-source" data-i18n="dash2Source">Source: World Bank World Development Indicators, 1960-2024.</p>
+          <p class="dashboard-note" data-i18n="dash2Note">Interactive dashboard built with Python and web-based visualization tools.</p>
         </div>
 
         <div class="container">
@@ -830,6 +980,7 @@
         <div class="section-head">
           <div>
             <span class="section-number">5</span>
+            <span class="section-kicker" data-i18n="outroKicker">Synthesis</span>
             <h2 data-i18n="outroTitle">Outro</h2>
           </div>
           <div class="section-text">
@@ -849,6 +1000,7 @@
         <div class="section-head">
           <div>
             <span class="section-number">R</span>
+            <span class="section-kicker" data-i18n="sourcesKicker">Documentation</span>
             <h2 data-i18n="sourcesTitle">References and Data Sources</h2>
           </div>
           <div class="section-text">
@@ -893,42 +1045,58 @@
         eyebrow: "CDS 301 / 501 Data Visualization",
         heroTitle: "Visualizing Global Development Through Demographic and Health Indicators",
         heroCopy: "A compact visual study of how fertility, migration, infant mortality, aging, and service-sector employment complicate income-based definitions of development.",
+        abstractKicker: "Project Overview",
         abstractTitle: "Abstract",
         abstractP1: "Traditional definitions of developed countries often rely heavily on economic measures such as Gross National Income (GNI) per capita. However, income alone may not fully capture the broader social, demographic, and health conditions associated with development. This project explores whether social indicators such as fertility, infant mortality, migration, and demographic inequality provide additional insight into how development should be understood and classified.",
         abstractP2: "Using data from the World Bank World Development Indicators and country group classifications from the United Nations World Economic Situation and Prospects framework, we examine global patterns across fertility rates, infant mortality, migrant share, and sex-based mortality differences. Through a combination of choropleth maps, box plots, and interactive dashboards built using Python, Plotly Dash, and web-based visualization tools, the project visualizes how countries transition through different stages of development over time.",
         abstractP3: "The findings suggest that development is multidimensional and uneven rather than purely income-based. While many countries experience substantial improvements in healthcare and demographic outcomes, regional disparities and demographic inequalities often persist despite broader economic growth. Overall, the project demonstrates that social and demographic indicators can provide a more comprehensive understanding of development than income classifications alone.",
+        fertilityKicker: "Demographics",
         fertilityTitle: "Fertility and Development",
         fertilityIntro: "Fertility decline is one of the most widely observed demographic patterns associated with development. Lower fertility often emerges alongside urbanization, women's education, rising living costs, and expanded access to healthcare and family planning.",
+        fertilityFrame1: "Fertility Pattern",
+        fertilityFrame2: "Group Comparison",
+        figureSourceWdi: "World Bank WDI",
         fertilityCaption1: "Figure 1A. Fertility patterns across countries and development groups.",
         fertilityCaption2: "Figure 1B. Additional fertility comparison across development groups.",
         fertilityFinding: "Developed economies generally cluster at lower fertility levels, while many developing economies remain higher. Some middle-income countries have already undergone major fertility declines, while some wealthy economies do not fit a simple demographic pattern.",
+        migrationKicker: "Migration",
         migrationTitle: "Migrant Share by Development Group",
         migrationIntro: "This violin plot compares international migrant stock as a share of total population across developed economies, economies in transition, and developing economies. Migration can reflect labor-market attraction, economic opportunity, political stability, and global integration.",
+        migrationFrame: "Migrant Share",
         migrationCaption: "Figure 2. International migrant stock as a share of population across development groups.",
         migrationFinding: "Developed economies generally show the highest migrant shares and the greatest variation. Economies in transition tend to fall in the middle, while most developing economies remain lower. Extreme outliers show that high migrant share alone does not automatically imply broad-based development.",
+        outliersKicker: "Geography",
         outliersTitle: "Geographic Distribution of Outliers",
         outliersP1: "This map examines the geographic distribution of outlier countries within the developing economies group in 2024, focusing on historical and geographic factors that may help explain unusually high international migrant stock.",
         outliersP2: "Using the 1.5xIQR rule, nine outlier countries were identified: Afghanistan, Angola, the United Arab Emirates, Argentina, Burundi, Benin, Burkina Faso, Bangladesh, and Bahrain.",
+        outliersFrame: "Outlier Map",
         outliersCaption: "Figure 3. Geographic distribution of migrant share outliers among developing economies in 2024.",
         outliersFinding: "The locations suggest that migration patterns are closely connected to each country's historical and geographic context, including foreign labor systems, conflict, displacement, regional mobility, and porous borders.",
+        mortalityKicker: "Health Transition",
         mortalityTitle: "Interactive Infant Mortality Visualizations",
         mortalityIntro: "These dashboards expand the analysis by examining how infant mortality changes across countries, sex categories, and time. They allow users to explore long-term health transition, compare regional development patterns, and observe how sex-based mortality inequality behaves as countries modernize.",
         dash1Title: "Infant Mortality and Health Transition Explorer",
         dash1Intro: "This dashboard combines a global infant mortality map with a health transition scatter plot. Users can filter by country, region, year, and sex category to examine how infant mortality rates decline over time.",
         openDashboard: "Open dashboard",
-        dash1Note: "On phones, swipe inside the dashboard to see the full chart. If it loads slowly, wait a few moments for the hosted app to wake up.",
+        dash1Mobile: "This interactive dashboard works best in a full browser view on phones.",
+        dash1Source: "Source: World Bank World Development Indicators, 1960-2024.",
+        dash1Note: "If the dashboard loads slowly, wait a few moments for the hosted app to wake up.",
         dash2Title: "Male-Female Infant Mortality Gap",
         dash2Intro: "This visualization isolates the male-female infant mortality gap across countries and over time. Positive values indicate higher male infant mortality, while negative values indicate higher female infant mortality.",
-        dash2Note: "On phones, swipe inside the dashboard to see the full chart.",
+        dash2Mobile: "Open the dashboard directly for the clearest mobile view.",
+        dash2Source: "Source: World Bank World Development Indicators, 1960-2024.",
+        dash2Note: "Interactive dashboard built with Python and web-based visualization tools.",
         summary1Title: "Health transition",
         summary1Text: "Most countries experienced substantial declines in infant mortality between 1960 and 2024.",
         summary2Title: "Uneven progress",
         summary2Text: "The pace of improvement differs significantly across regions and development stages.",
         summary3Title: "Persistent gaps",
         summary3Text: "Sex-based disparities can remain visible even as healthcare systems modernize.",
+        outroKicker: "Synthesis",
         outroTitle: "Outro",
         outroP1: "This project demonstrates that development is multidimensional and cannot be fully understood through income-based classifications alone. By comparing fertility, infant mortality, migrant share, and other demographic indicators across countries and development groups, we observe that social outcomes often reveal important differences that traditional economic measures may overlook.",
         outroP2: "Together, the visualizations suggest that development should be viewed as a broader social process shaped by healthcare access, demographic transition, migration patterns, and long-term structural change.",
+        sourcesKicker: "Documentation",
         sourcesTitle: "References and Data Sources",
         sourcesIntro: "Data and framework references used for this project.",
         source1: "World Bank. <em>World Development Indicators</em>. Accessed 2026.",
@@ -950,42 +1118,58 @@
         eyebrow: "CDS 301 / 501 데이터 시각화",
         heroTitle: "인구 및 보건 지표로 살펴보는 세계 발전",
         heroCopy: "출산율, 이주, 영아 사망률, 고령화, 서비스업 고용이 소득 중심의 발전국가 정의를 어떻게 더 복합적으로 만드는지 살펴보는 시각화 프로젝트입니다.",
+        abstractKicker: "프로젝트 개요",
         abstractTitle: "초록",
         abstractP1: "선진국에 대한 전통적인 정의는 1인당 국민총소득(GNI)과 같은 경제 지표에 크게 의존하는 경우가 많습니다. 그러나 소득만으로는 발전과 관련된 더 넓은 사회적, 인구학적, 보건 조건을 충분히 설명하기 어렵습니다. 이 프로젝트는 출산율, 영아 사망률, 이주, 인구학적 불평등과 같은 사회 지표가 발전을 이해하고 분류하는 데 어떤 추가적인 통찰을 제공하는지 탐구합니다.",
         abstractP2: "세계은행 세계개발지표와 유엔 세계경제상황전망의 국가 그룹 분류를 활용하여 출산율, 영아 사망률, 이주민 비중, 성별 사망률 차이에 나타나는 세계적 패턴을 분석합니다. 단계구분도, 박스 플롯, Python과 Plotly Dash 및 웹 기반 시각화 도구로 제작한 인터랙티브 대시보드를 통해 국가들이 시간에 따라 서로 다른 발전 단계로 이동하는 과정을 시각화합니다.",
         abstractP3: "분석 결과는 발전이 순수하게 소득 기반인 것이 아니라 다차원적이고 불균등한 과정임을 보여줍니다. 많은 국가가 보건의료와 인구학적 결과에서 큰 개선을 경험했지만, 지역 격차와 인구학적 불평등은 더 넓은 경제 성장에도 불구하고 지속되는 경우가 많습니다. 전반적으로 이 프로젝트는 사회 및 인구학적 지표가 소득 분류만으로는 얻기 어려운 더 종합적인 발전 이해를 제공할 수 있음을 보여줍니다.",
+        fertilityKicker: "인구 구조",
         fertilityTitle: "출산율과 발전",
         fertilityIntro: "출산율 감소는 발전과 관련해 가장 널리 관찰되는 인구학적 변화 중 하나입니다. 낮은 출산율은 도시화, 여성 교육, 생활비 상승, 보건의료 및 가족계획 접근성 확대와 함께 나타나는 경우가 많습니다.",
+        fertilityFrame1: "출산율 패턴",
+        fertilityFrame2: "그룹 비교",
+        figureSourceWdi: "세계은행 WDI",
         fertilityCaption1: "그림 1A. 국가 및 발전 그룹별 출산율 패턴.",
         fertilityCaption2: "그림 1B. 발전 그룹 간 추가 출산율 비교.",
         fertilityFinding: "선진 경제는 대체로 낮은 출산율에 모이는 반면, 많은 개발도상국은 상대적으로 높은 수준을 보입니다. 일부 중소득 국가는 이미 큰 폭의 출산율 감소를 경험했으며, 일부 부유한 경제도 단순한 인구학적 패턴에 완전히 들어맞지는 않습니다.",
+        migrationKicker: "이주",
         migrationTitle: "발전 그룹별 이주민 비중",
         migrationIntro: "이 바이올린 플롯은 선진 경제, 전환기 경제, 개발도상 경제에서 전체 인구 대비 국제 이주민 비중을 비교합니다. 이주는 노동시장 매력도, 경제적 기회, 정치적 안정성, 세계적 통합 정도를 반영할 수 있습니다.",
+        migrationFrame: "이주민 비중",
         migrationCaption: "그림 2. 발전 그룹별 전체 인구 대비 국제 이주민 비중.",
         migrationFinding: "선진 경제는 대체로 가장 높은 이주민 비중과 가장 큰 변동성을 보입니다. 전환기 경제는 중간 수준에 위치하는 경향이 있고, 대부분의 개발도상 경제는 더 낮은 수준에 머뭅니다. 하지만 극단적인 이상치는 이주민 비중만으로 폭넓은 발전을 판단할 수 없음을 보여줍니다.",
+        outliersKicker: "지리",
         outliersTitle: "이상치의 지리적 분포",
         outliersP1: "이 지도는 2024년 개발도상 경제 그룹 내 이상치 국가의 지리적 분포를 살펴보며, 국제 이주민 비중이 유난히 높은 이유를 설명할 수 있는 역사적·지리적 요인에 주목합니다.",
         outliersP2: "1.5xIQR 기준을 적용한 결과 아프가니스탄, 앙골라, 아랍에미리트, 아르헨티나, 부룬디, 베냉, 부르키나파소, 방글라데시, 바레인 등 아홉 개 국가가 이상치로 확인되었습니다.",
+        outliersFrame: "이상치 지도",
         outliersCaption: "그림 3. 2024년 개발도상 경제 내 이주민 비중 이상치의 지리적 분포.",
         outliersFinding: "이 국가들의 위치는 이주 패턴이 각국의 역사적·지리적 맥락과 밀접하게 연결되어 있음을 보여줍니다. 여기에는 외국인 노동 시스템, 분쟁과 이주, 지역 이동성, 개방적인 국경 구조 등이 포함됩니다.",
+        mortalityKicker: "보건 전환",
         mortalityTitle: "영아 사망률 인터랙티브 시각화",
         mortalityIntro: "이 대시보드들은 국가, 성별 범주, 시간에 따라 영아 사망률이 어떻게 변화하는지 분석을 확장합니다. 장기적인 보건 전환, 지역별 발전 패턴, 현대화 과정에서 성별 사망률 격차가 어떻게 나타나는지 탐색할 수 있습니다.",
         dash1Title: "영아 사망률 및 보건 전환 탐색기",
         dash1Intro: "이 대시보드는 세계 영아 사망률 지도와 보건 전환 산점도를 결합합니다. 사용자는 국가, 지역, 연도, 성별 범주를 필터링하여 영아 사망률이 시간에 따라 어떻게 감소하는지 살펴볼 수 있습니다.",
         openDashboard: "대시보드 열기",
-        dash1Note: "휴대폰에서는 대시보드 안에서 좌우로 스와이프하면 전체 차트를 볼 수 있습니다. 로딩이 느리면 호스팅 앱이 켜질 때까지 잠시 기다려 주세요.",
+        dash1Mobile: "휴대폰에서는 대시보드를 전체 브라우저 화면으로 여는 것이 가장 보기 좋습니다.",
+        dash1Source: "출처: 세계은행 세계개발지표, 1960-2024.",
+        dash1Note: "로딩이 느리면 호스팅 앱이 켜질 때까지 잠시 기다려 주세요.",
         dash2Title: "남아-여아 영아 사망률 격차",
         dash2Intro: "이 시각화는 국가와 시간에 따른 남아-여아 영아 사망률 격차를 분리하여 보여줍니다. 양수는 남아 영아 사망률이 더 높음을, 음수는 여아 영아 사망률이 더 높음을 의미합니다.",
-        dash2Note: "휴대폰에서는 대시보드 안에서 좌우로 스와이프하면 전체 차트를 볼 수 있습니다.",
+        dash2Mobile: "가장 선명한 모바일 화면을 위해 대시보드를 직접 열어 보세요.",
+        dash2Source: "출처: 세계은행 세계개발지표, 1960-2024.",
+        dash2Note: "Python 및 웹 기반 시각화 도구로 제작한 인터랙티브 대시보드입니다.",
         summary1Title: "보건 전환",
         summary1Text: "1960년부터 2024년 사이 대부분의 국가는 영아 사망률이 크게 감소했습니다.",
         summary2Title: "불균등한 진전",
         summary2Text: "개선 속도는 지역과 발전 단계에 따라 상당히 다르게 나타납니다.",
         summary3Title: "지속되는 격차",
         summary3Text: "보건의료 체계가 현대화되어도 성별 격차는 여전히 관찰될 수 있습니다.",
+        outroKicker: "종합",
         outroTitle: "결론",
         outroP1: "이 프로젝트는 발전이 다차원적이며 소득 기반 분류만으로는 충분히 이해할 수 없음을 보여줍니다. 출산율, 영아 사망률, 이주민 비중, 기타 인구학적 지표를 국가 및 발전 그룹별로 비교하면 전통적인 경제 지표가 놓칠 수 있는 사회적 차이가 드러납니다.",
         outroP2: "종합하면, 발전은 보건의료 접근성, 인구 전환, 이주 패턴, 장기적인 구조 변화에 의해 형성되는 더 넓은 사회적 과정으로 이해되어야 합니다.",
+        sourcesKicker: "문서화",
         sourcesTitle: "참고문헌 및 데이터 출처",
         sourcesIntro: "이 프로젝트에 사용된 데이터와 분류 체계입니다.",
         source1: "세계은행. <em>세계개발지표</em>. 2026년 접속.",
@@ -999,6 +1183,7 @@
 
     const languageButtons = document.querySelectorAll("[data-language]");
     const metaDescription = document.querySelector('meta[name="description"]');
+    const progressBar = document.querySelector(".scroll-progress-bar");
 
     function setLanguage(language) {
       const copy = translations[language] || translations.en;
@@ -1036,7 +1221,17 @@
       });
     });
 
+    function updateScrollProgress() {
+      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
+      progressBar.style.width = `${Math.min(progress, 100)}%`;
+    }
+
+    window.addEventListener("scroll", updateScrollProgress, { passive: true });
+    window.addEventListener("resize", updateScrollProgress);
+
     setLanguage(localStorage.getItem("preferredLanguage") || "en");
+    updateScrollProgress();
   </script>
 </body>
 </html>
