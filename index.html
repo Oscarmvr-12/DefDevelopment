@@ -1,18 +1,40 @@
 <section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Outro</h2>
+    <div class="content">
+      <p>
+        This project demonstrates that development is multidimensional and cannot be fully understood through income-based classifications alone. By comparing fertility, infant mortality, migrant share, and other demographic indicators across countries and development groups, we observe that social outcomes often reveal important differences that traditional economic measures may overlook. Some countries display strong social development characteristics despite lower income levels, while others maintain economic wealth alongside demographic or structural challenges.
+      </p>
+
+      <p>
+        Together, the visualizations suggest that development should be viewed as a broader social process shaped by healthcare access, demographic transition, migration patterns, and long-term structural change. Rather than relying solely on GNI per capita thresholds, a multidimensional approach may provide a more complete understanding of how countries experience and sustain development over time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- OSCAR SECTION -->
+<!-- ===================================================== -->
+
+<section class="section">
   <div class="container is-max-widescreen">
 
+    <hr style="margin-top:4rem; margin-bottom:4rem;">
+
     <h2 class="title is-2 has-text-centered">
-      Interactive Visualizations
+      Interactive Infant Mortality Visualizations
     </h2>
 
     <div class="content has-text-justified">
       <p>
-        These visualizations explore infant mortality as a measure of global development,
-        sex-based health inequality, and long-term health transition. The dashboards allow
-        users to investigate how infant mortality changes across countries, regions, sex,
-        and time while also examining broader global health transitions.
+        This section expands the infant mortality analysis by examining how mortality changes across countries, sex categories, and time. While the earlier infant mortality map provides a broader geographic overview, these interactive dashboards allow viewers to explore historical change, compare male and female mortality patterns, and observe how countries transition through different stages of health development over time.
       </p>
     </div>
+
+    <!-- ========================= -->
+    <!-- DASHBOARD 1 -->
+    <!-- ========================= -->
 
     <h3 class="title is-3 has-text-centered">
       Dashboard 1 — Infant Mortality and Health Transition Explorer
@@ -20,9 +42,11 @@
 
     <div class="content has-text-justified">
       <p>
-        This interactive dashboard combines a global infant mortality map with a health
-        transition scatter plot. Users can filter countries, animate yearly changes, and
-        compare regional development patterns.
+        This interactive dashboard combines a global infant mortality map with a health transition scatter plot. Users can filter by country, region, year, and sex category to examine how infant mortality changes across time and how sex-based mortality gaps behave as countries develop.
+      </p>
+
+      <p>
+        The choropleth map visualizes global mortality patterns geographically, while the transition scatter plot focuses on developmental movement by showing how countries shift as mortality rates decline. Together, the visualizations demonstrate that health transition is dynamic, uneven, and closely connected to broader patterns of development and inequality.
       </p>
     </div>
 
@@ -40,9 +64,16 @@
         src="https://cds-301-birthrate.onrender.com"
         width="100%"
         height="100%"
-        style="border: none; overflow: hidden;">
+        style="
+          border: none;
+          overflow: hidden;
+        ">
       </iframe>
     </div>
+
+    <!-- ========================= -->
+    <!-- DASHBOARD 2 -->
+    <!-- ========================= -->
 
     <h3 class="title is-3 has-text-centered">
       Dashboard 2 — Male–Female Infant Mortality Gap
@@ -50,10 +81,11 @@
 
     <div class="content has-text-justified">
       <p>
-        This visualization focuses specifically on the difference between male and female
-        infant mortality rates across countries and over time. Positive values indicate
-        higher male infant mortality, while negative values indicate higher female infant
-        mortality.
+        This visualization isolates the male–female infant mortality gap across countries and over time. Positive values indicate higher male infant mortality, while negative values indicate higher female infant mortality. By focusing specifically on the mortality difference itself, the chart highlights where sex-based inequality persists geographically even as overall infant mortality improves worldwide.
+      </p>
+
+      <p>
+        The divergence-style choropleth map allows viewers to examine how demographic inequality changes historically across regions and reinforces the idea that improvements in healthcare and development do not always eliminate inequality uniformly.
       </p>
     </div>
 
@@ -71,9 +103,60 @@
         src="./static/dashboards/MaleVFemale.html"
         width="100%"
         height="100%"
-        style="border: none; overflow: hidden;">
+        style="
+          border: none;
+          overflow: hidden;
+        ">
       </iframe>
     </div>
 
+    <!-- ========================= -->
+    <!-- OVERALL TAKEAWAY -->
+    <!-- ========================= -->
+
+    <h3 class="title is-3 has-text-centered">
+      Overall Findings
+    </h3>
+
+    <div class="content has-text-justified">
+      <p>
+        Together, these visualizations demonstrate that infant mortality is not only a strong indicator of development, but also a way to examine global inequality and health transition over time. Although most countries experienced substantial declines in infant mortality between 1960 and 2024, the pace of improvement differed significantly across regions and stages of development.
+      </p>
+
+      <p>
+        The dashboards also show that sex-based disparities persist even as countries modernize and improve healthcare systems, suggesting that development is a dynamic and uneven process rather than a uniform global transition.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- REFERENCES -->
+<!-- ===================================================== -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">References and Data Sources</h2>
+
+    <div class="content has-text-justified">
+
+      <p>
+        1. World Bank. <em>World Development Indicators</em>. Accessed 2026.
+      </p>
+
+      <p>
+        2. United Nations. <em>World Economic Situation and Prospects 2025</em>. United Nations Publications, 2025.
+      </p>
+
+      <p>
+        3. Gapminder Foundation. “Visualizing Global Development Trends Through Animated Scatterplots.”
+      </p>
+
+      <p>
+        4. Natural Earth. “Admin 0 Countries Dataset.” Public geographic dataset used for choropleth regional mapping.
+      </p>
+
+    </div>
   </div>
 </section>
