@@ -182,9 +182,9 @@
       width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-      gap: clamp(32px, 7vw, 86px);
-      align-items: end;
+      grid-template-columns: minmax(0, 1fr);
+      gap: clamp(28px, 5vw, 56px);
+      align-items: start;
     }
 
     .eyebrow {
@@ -215,9 +215,11 @@
     }
 
     h1 {
-      max-width: 900px;
-      font-size: clamp(2.8rem, 6.8vw, 5.8rem);
+      max-width: 980px;
+      font-size: clamp(2.6rem, 5.2vw, 4.7rem);
       font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
     }
 
     h2 {
@@ -241,7 +243,7 @@
     }
 
     .hero-copy {
-      max-width: 610px;
+      max-width: 760px;
       padding: 28px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
@@ -813,7 +815,8 @@
       }
 
       h1 {
-        font-size: clamp(2.85rem, 15vw, 4.2rem);
+        font-size: clamp(2.4rem, 12vw, 3.6rem);
+        line-height: 1.08;
       }
 
       p {
