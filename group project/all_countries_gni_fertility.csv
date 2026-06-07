@@ -1,0 +1,189 @@
+country,country_code,year,gni_per_capita,total_fertility_rate,development_status,income_group
+Albania,ALB,2024,9910.0,1.341,Developing,Upper middle income
+Algeria,DZA,2024,5370.0,2.723,Developing,Upper middle income
+Andorra,AND,2024,47570.0,1.087,Developing,High income
+Angola,AGO,2024,2840.0,5.048,Developing,Lower middle income
+Antigua and Barbuda,ATG,2024,21150.0,1.582,Developing,High income
+Argentina,ARG,2024,13530.0,1.504,Developing,Upper middle income
+Armenia,ARM,2024,7810.0,1.7,Developing,Upper middle income
+Aruba,ABW,2024,35570.0,1.606,Developing,High income
+Australia,AUS,2024,62680.0,1.481,Developed,High income
+Austria,AUT,2024,54760.0,1.31,Developed,High income
+Azerbaijan,AZE,2024,7330.0,1.43,Developing,Upper middle income
+"Bahamas, The",BHS,2024,37020.0,1.374,Developing,High income
+Bahrain,BHR,2024,28090.0,1.805,Developing,High income
+Bangladesh,BGD,2024,2820.0,2.138,Developing,Lower middle income
+Barbados,BRB,2024,25140.0,1.708,Developing,High income
+Belarus,BLR,2024,8260.0,1.217,Developing,Upper middle income
+Belgium,BEL,2024,55290.0,1.44,Developed,High income
+Belize,BLZ,2024,7150.0,2.021,Developing,Upper middle income
+Benin,BEN,2024,1430.0,4.48,Developing,Lower middle income
+Bermuda,BMU,2024,145150.0,1.405,Developing,High income
+Bolivia,BOL,2024,4160.0,2.523,Developing,Lower middle income
+Bosnia and Herzegovina,BIH,2024,8790.0,1.492,Developing,Upper middle income
+Botswana,BWA,2024,7750.0,2.703,Developing,Upper middle income
+Brazil,BRA,2024,9930.0,1.614,Developing,Upper middle income
+Brunei Darussalam,BRN,2024,36020.0,1.731,Developing,High income
+Bulgaria,BGR,2024,15370.0,1.72,Developed,High income
+Burkina Faso,BFA,2024,850.0,4.11,Developing,Low income
+Burundi,BDI,2024,260.0,4.789,Developing,Low income
+Cabo Verde,CPV,2024,4950.0,1.511,Developing,Upper middle income
+Cambodia,KHM,2024,2550.0,2.548,Developing,Lower middle income
+Cameroon,CMR,2024,1700.0,4.261,Developing,Lower middle income
+Canada,CAN,2024,53400.0,1.25,Developed,High income
+Chad,TCD,2024,940.0,6.028,Developing,Low income
+Chile,CHL,2024,15750.0,1.14,Developing,High income
+China,CHN,2024,13660.0,1.013,Developing,Upper middle income
+Colombia,COL,2024,7040.0,1.634,Developing,Upper middle income
+Comoros,COM,2024,1590.0,3.822,Developing,Lower middle income
+"Congo, Dem. Rep.",COD,2024,670.0,5.981,Developing,Low income
+"Congo, Rep.",COG,2024,2280.0,4.109,Developing,Lower middle income
+Costa Rica,CRI,2024,15620.0,1.318,Developing,High income
+Cote d'Ivoire,CIV,2024,2530.0,4.23,Developing,Lower middle income
+Croatia,HRV,2024,22250.0,1.46,Developed,High income
+Curacao,CUW,2024,22590.0,1.4,Developing,High income
+Cyprus,CYP,2024,32870.0,1.38,Developed,High income
+Czechia,CZE,2024,29560.0,1.36,Developed,High income
+Denmark,DNK,2024,72540.0,1.47,Developed,High income
+Djibouti,DJI,2024,3640.0,2.618,Developing,Lower middle income
+Dominica,DMA,2024,10230.0,1.48,Developing,Upper middle income
+Dominican Republic,DOM,2024,10280.0,2.222,Developing,Upper middle income
+Ecuador,ECU,2024,6430.0,1.806,Developing,Upper middle income
+"Egypt, Arab Rep.",EGY,2024,3510.0,2.735,Developing,Lower middle income
+El Salvador,SLV,2024,5120.0,1.768,Developing,Upper middle income
+Equatorial Guinea,GNQ,2024,4740.0,4.116,Developing,Upper middle income
+Estonia,EST,2024,28880.0,1.18,Developed,High income
+Eswatini,SWZ,2024,3590.0,2.718,Developing,Lower middle income
+Ethiopia,ETH,2024,1100.0,3.909,Developing,Low income
+Euro area,EMU,2024,44691.4787889803,1.34667930848404,Developing,High income
+Faroe Islands,FRO,2024,73070.0,1.9129,Developing,High income
+Fiji,FJI,2024,5820.0,2.27,Developing,Upper middle income
+Finland,FIN,2024,51650.0,1.25,Developed,High income
+France,FRA,2024,45160.0,1.61,Developed,High income
+French Polynesia,PYF,2024,23930.0,1.491,Developing,High income
+Gabon,GAB,2024,7790.0,3.592,Developing,Upper middle income
+"Gambia, The",GMB,2024,880.0,3.907,Developing,Low income
+Georgia,GEO,2024,8110.0,1.802,Developing,Upper middle income
+Germany,DEU,2024,55090.0,1.36,Developed,High income
+Ghana,GHA,2024,2310.0,3.344,Developing,Lower middle income
+Greece,GRC,2024,22730.0,1.24,Developed,High income
+Grenada,GRD,2024,10510.0,1.472,Developing,Upper middle income
+Guatemala,GTM,2024,5780.0,2.287,Developing,Upper middle income
+Guinea,GIN,2024,1440.0,4.131,Developing,Lower middle income
+Guinea-Bissau,GNB,2024,990.0,3.757,Developing,Low income
+Guyana,GUY,2024,20140.0,2.395,Developing,High income
+Haiti,HTI,2024,1760.0,2.625,Developing,Lower middle income
+Honduras,HND,2024,3020.0,2.476,Developing,Lower middle income
+"Hong Kong SAR, China",HKG,2024,57070.0,0.841,Developing,High income
+Hungary,HUN,2024,20770.0,1.41,Developed,High income
+Iceland,ISL,2024,82200.0,1.56,Developed,High income
+India,IND,2024,2650.0,1.962,Developing,Lower middle income
+Indonesia,IDN,2024,4910.0,2.115,Developing,Upper middle income
+"Iran, Islamic Rep.",IRN,2024,5130.0,1.684,Developing,Upper middle income
+Iraq,IRQ,2024,6030.0,3.221,Developing,Upper middle income
+Ireland,IRL,2024,80650.0,1.47,Developed,High income
+Israel,ISR,2024,52910.0,2.87,Developing,High income
+Italy,ITA,2024,38590.0,1.18,Developed,High income
+Jamaica,JAM,2024,7210.0,1.351,Developing,Upper middle income
+Japan,JPN,2024,36000.0,1.15,Developed,High income
+Jordan,JOR,2024,4430.0,2.604,Developing,Lower middle income
+Kazakhstan,KAZ,2024,12090.0,2.984,Developing,Upper middle income
+Kenya,KEN,2024,2090.0,3.167,Developing,Lower middle income
+Kiribati,KIR,2024,3660.0,3.124,Developing,Lower middle income
+"Korea, Rep.",KOR,2024,36750.0,0.748,Developed,High income
+Kosovo,XKX,2024,6910.0,1.538,Developing,Upper middle income
+Kuwait,KWT,2024,40770.0,1.56,Developing,High income
+Kyrgyz Republic,KGZ,2024,2190.0,2.6,Developing,Lower middle income
+Lao PDR,LAO,2024,2000.0,2.397,Developing,Lower middle income
+Latvia,LVA,2024,21630.0,1.24,Developed,High income
+Lesotho,LSO,2024,1180.0,2.664,Developing,Lower middle income
+Liberia,LBR,2024,760.0,3.864,Developing,Low income
+Libya,LBY,2024,6890.0,2.298,Developing,Upper middle income
+Lithuania,LTU,2024,27150.0,1.11,Developed,High income
+Luxembourg,LUX,2024,84650.0,1.25,Developed,High income
+Madagascar,MDG,2024,510.0,3.912,Developing,Low income
+Malawi,MWI,2024,570.0,3.59,Developing,Low income
+Malaysia,MYS,2024,11650.0,1.543,Developing,Upper middle income
+Maldives,MDV,2024,11640.0,1.56,Developing,Upper middle income
+Mali,MLI,2024,1030.0,5.51,Developing,Low income
+Malta,MLT,2024,36730.0,1.01,Developed,High income
+Marshall Islands,MHL,2024,8500.0,2.864,Developing,Upper middle income
+Mauritania,MRT,2024,2120.0,4.625,Developing,Lower middle income
+Mauritius,MUS,2024,12970.0,1.44,Developing,Upper middle income
+Mexico,MEX,2024,12850.0,1.892,Developing,Upper middle income
+"Micronesia, Fed. Sts.",FSM,2024,4240.0,2.743,Developing,Lower middle income
+Moldova,MDA,2024,6880.0,1.726,Developing,Upper middle income
+Mongolia,MNG,2024,5380.0,2.5,Developing,Upper middle income
+Montenegro,MNE,2024,12210.0,1.8,Developing,Upper middle income
+Morocco,MAR,2024,3840.0,2.208,Developing,Lower middle income
+Mozambique,MOZ,2024,550.0,4.69,Developing,Low income
+Myanmar,MMR,2024,1210.0,2.098,Developing,Lower middle income
+Namibia,NAM,2024,4240.0,3.211,Developing,Lower middle income
+Nauru,NRU,2024,20400.0,3.29,Developing,High income
+Nepal,NPL,2024,1470.0,1.961,Developing,Lower middle income
+Netherlands,NLD,2024,62520.0,1.43,Developed,High income
+New Caledonia,NCL,2024,30070.0,1.964,Developing,High income
+New Zealand,NZL,2024,47580.0,1.57,Developed,High income
+Nicaragua,NIC,2024,2510.0,2.206,Developing,Lower middle income
+Niger,NER,2024,680.0,5.935,Developing,Low income
+Nigeria,NGA,2024,1700.0,4.382,Developing,Lower middle income
+North Macedonia,MKD,2024,8300.0,1.4,Developing,Upper middle income
+Norway,NOR,2024,98170.0,1.45,Developed,High income
+Oman,OMN,2024,19520.0,2.508,Developing,High income
+Pakistan,PAK,2024,1430.0,3.547,Developing,Lower middle income
+Panama,PAN,2024,18010.0,2.106,Developing,High income
+Papua New Guinea,PNG,2024,2900.0,3.072,Developing,Lower middle income
+Paraguay,PRY,2024,6300.0,2.416,Developing,Upper middle income
+Peru,PER,2024,7500.0,1.965,Developing,Upper middle income
+Philippines,PHL,2024,4470.0,1.894,Developing,Upper middle income
+Poland,POL,2024,21590.0,1.14,Developed,High income
+Portugal,PRT,2024,26910.0,1.41,Developed,High income
+Puerto Rico (US),PRI,2024,25860.0,0.92,Developing,High income
+Qatar,QAT,2024,77290.0,1.717,Developing,High income
+Romania,ROU,2024,17600.0,1.39,Developed,High income
+Russian Federation,RUS,2024,15320.0,1.418,Developing,High income
+Rwanda,RWA,2024,1040.0,3.645,Developing,Low income
+Samoa,WSM,2024,5040.0,3.801,Developing,Upper middle income
+Sao Tome and Principe,STP,2024,2850.0,3.596,Developing,Lower middle income
+Saudi Arabia,SAU,2024,35630.0,2.308,Developing,High income
+Senegal,SEN,2024,1680.0,3.765,Developing,Lower middle income
+Serbia,SRB,2024,11610.0,1.64,Developing,Upper middle income
+Seychelles,SYC,2024,17460.0,1.85,Developing,High income
+Sierra Leone,SLE,2024,820.0,3.703,Developing,Low income
+Singapore,SGP,2024,74750.0,0.97,Developing,High income
+Sint Maarten (Dutch part),SXM,2024,38950.0,1.44,Developing,High income
+Slovak Republic,SVK,2024,23560.0,1.46,Developing,High income
+Slovenia,SVN,2024,31790.0,1.52,Developed,High income
+Solomon Islands,SLB,2024,1910.0,3.513,Developing,Lower middle income
+"Somalia, Fed. Rep.",SOM,2024,620.0,6.013,Developing,Low income
+Spain,ESP,2024,33550.0,1.1,Developed,High income
+Sri Lanka,LKA,2024,3860.0,1.952,Developing,Lower middle income
+St. Kitts and Nevis,KNA,2024,22470.0,1.526,Developing,High income
+St. Lucia,LCA,2024,12640.0,1.385,Developing,Upper middle income
+St. Vincent and the Grenadines,VCT,2024,11060.0,1.761,Developing,Upper middle income
+Sudan,SDN,2024,710.0,4.264,Developing,Low income
+Suriname,SUR,2024,5690.0,2.231,Developing,Upper middle income
+Sweden,SWE,2024,58190.0,1.43,Developed,High income
+Switzerland,CHE,2024,95220.0,1.29,Developed,High income
+Tajikistan,TJK,2024,1650.0,3.036,Developing,Lower middle income
+Tanzania,TZA,2024,1210.0,4.541,Developing,Lower middle income
+Thailand,THA,2024,7100.0,1.204,Developing,Upper middle income
+Timor-Leste,TLS,2024,1650.0,2.627,Developing,Lower middle income
+Togo,TGO,2024,1080.0,4.121673,Developing,Low income
+Tunisia,TUN,2024,3880.0,1.818,Developing,Lower middle income
+Turkiye,TUR,2024,13460.0,1.48,Developing,Upper middle income
+Turkmenistan,TKM,2024,6510.0,2.661,Developing,Upper middle income
+Turks and Caicos Islands,TCA,2024,36760.0,1.452,Developing,High income
+Uganda,UGA,2024,1020.0,4.165,Developing,Low income
+Ukraine,UKR,2024,5210.0,0.988,Developing,Upper middle income
+United Arab Emirates,ARE,2024,51550.0,1.213,Developing,High income
+United Kingdom,GBR,2024,49470.0,1.551,Developed,High income
+United States,USA,2024,83490.0,1.6265,Developed,High income
+Uruguay,URY,2024,21650.0,1.397,Developing,High income
+Uzbekistan,UZB,2024,3020.0,3.486,Developing,Lower middle income
+Vanuatu,VUT,2024,3890.0,3.569,Developing,Lower middle income
+"Venezuela, RB",VEN,2024,3820.0,2.077,Developing,Lower middle income
+Viet Nam,VNM,2024,4490.0,1.895,Developing,Upper middle income
+West Bank and Gaza,PSE,2024,2710.0,3.25,Developing,Lower middle income
+Zambia,ZMB,2024,1220.0,4.036,Developing,Lower middle income
+Zimbabwe,ZWE,2024,2400.0,3.674,Developing,Lower middle income

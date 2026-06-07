@@ -1,0 +1,38 @@
+country,country_code,year,gni_per_capita,total_fertility_rate,country_standard,region
+Australia,AUS,2024,62680.0,1.481,Australia,Asia-Pacific
+Austria,AUT,2024,54760.0,1.31,Austria,Europe
+Belgium,BEL,2024,55290.0,1.44,Belgium,Europe
+Bulgaria,BGR,2024,15370.0,1.72,Bulgaria,Europe
+Canada,CAN,2024,53400.0,1.25,Canada,North America
+Switzerland,CHE,2024,95220.0,1.29,Switzerland,Europe
+Cyprus,CYP,2024,32870.0,1.38,Cyprus,Europe
+Czechia,CZE,2024,29560.0,1.36,Czechia,Europe
+Germany,DEU,2024,55090.0,1.36,Germany,Europe
+Denmark,DNK,2024,72540.0,1.47,Denmark,Europe
+Spain,ESP,2024,33550.0,1.1,Spain,Europe
+Estonia,EST,2024,28880.0,1.18,Estonia,Europe
+Finland,FIN,2024,51650.0,1.25,Finland,Europe
+France,FRA,2024,45160.0,1.61,France,Europe
+United Kingdom,GBR,2024,49470.0,1.551,United Kingdom,Europe
+Greece,GRC,2024,22730.0,1.24,Greece,Europe
+Croatia,HRV,2024,22250.0,1.46,Croatia,Europe
+Hungary,HUN,2024,20770.0,1.41,Hungary,Europe
+Ireland,IRL,2024,80650.0,1.47,Ireland,Europe
+Iceland,ISL,2024,82200.0,1.56,Iceland,Europe
+Italy,ITA,2024,38590.0,1.18,Italy,Europe
+Japan,JPN,2024,36000.0,1.15,Japan,Asia-Pacific
+"Korea, Rep.",KOR,2024,36750.0,0.748,South Korea,Asia-Pacific
+Lithuania,LTU,2024,27150.0,1.11,Lithuania,Europe
+Luxembourg,LUX,2024,84650.0,1.25,Luxembourg,Europe
+Latvia,LVA,2024,21630.0,1.24,Latvia,Europe
+Malta,MLT,2024,36730.0,1.01,Malta,Europe
+Netherlands,NLD,2024,62520.0,1.43,Netherlands,Europe
+Norway,NOR,2024,98170.0,1.45,Norway,Europe
+New Zealand,NZL,2024,47580.0,1.57,New Zealand,Asia-Pacific
+Poland,POL,2024,21590.0,1.14,Poland,Europe
+Portugal,PRT,2024,26910.0,1.41,Portugal,Europe
+Romania,ROU,2024,17600.0,1.39,Romania,Europe
+Slovak Republic,SVK,2024,23560.0,1.46,Slovakia,Europe
+Slovenia,SVN,2024,31790.0,1.52,Slovenia,Europe
+Sweden,SWE,2024,58190.0,1.43,Sweden,Europe
+United States,USA,2024,83490.0,1.6265,United States,North America

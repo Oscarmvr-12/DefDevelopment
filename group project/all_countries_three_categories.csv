@@ -1,0 +1,189 @@
+country,country_code,year,gni_per_capita,total_fertility_rate,category
+Albania,ALB,2024,9910.0,1.341,Transitioning
+Algeria,DZA,2024,5370.0,2.723,Developing
+Andorra,AND,2024,47570.0,1.087,Developing
+Angola,AGO,2024,2840.0,5.048,Developing
+Antigua and Barbuda,ATG,2024,21150.0,1.582,Developing
+Argentina,ARG,2024,13530.0,1.504,Developing
+Armenia,ARM,2024,7810.0,1.7,Transitioning
+Aruba,ABW,2024,35570.0,1.606,Developing
+Australia,AUS,2024,62680.0,1.481,Developed
+Austria,AUT,2024,54760.0,1.31,Developed
+Azerbaijan,AZE,2024,7330.0,1.43,Transitioning
+"Bahamas, The",BHS,2024,37020.0,1.374,Developing
+Bahrain,BHR,2024,28090.0,1.805,Developing
+Bangladesh,BGD,2024,2820.0,2.138,Developing
+Barbados,BRB,2024,25140.0,1.708,Developing
+Belarus,BLR,2024,8260.0,1.217,Transitioning
+Belgium,BEL,2024,55290.0,1.44,Developed
+Belize,BLZ,2024,7150.0,2.021,Developing
+Benin,BEN,2024,1430.0,4.48,Developing
+Bermuda,BMU,2024,145150.0,1.405,Developing
+Bolivia,BOL,2024,4160.0,2.523,Developing
+Bosnia and Herzegovina,BIH,2024,8790.0,1.492,Transitioning
+Botswana,BWA,2024,7750.0,2.703,Developing
+Brazil,BRA,2024,9930.0,1.614,Developing
+Brunei Darussalam,BRN,2024,36020.0,1.731,Developing
+Bulgaria,BGR,2024,15370.0,1.72,Developed
+Burkina Faso,BFA,2024,850.0,4.11,Developing
+Burundi,BDI,2024,260.0,4.789,Developing
+Cabo Verde,CPV,2024,4950.0,1.511,Developing
+Cambodia,KHM,2024,2550.0,2.548,Developing
+Cameroon,CMR,2024,1700.0,4.261,Developing
+Canada,CAN,2024,53400.0,1.25,Developed
+Chad,TCD,2024,940.0,6.028,Developing
+Chile,CHL,2024,15750.0,1.14,Developing
+China,CHN,2024,13660.0,1.013,Developing
+Colombia,COL,2024,7040.0,1.634,Developing
+Comoros,COM,2024,1590.0,3.822,Developing
+"Congo, Dem. Rep.",COD,2024,670.0,5.981,Developing
+"Congo, Rep.",COG,2024,2280.0,4.109,Developing
+Costa Rica,CRI,2024,15620.0,1.318,Developing
+Cote d'Ivoire,CIV,2024,2530.0,4.23,Developing
+Croatia,HRV,2024,22250.0,1.46,Developed
+Curacao,CUW,2024,22590.0,1.4,Developing
+Cyprus,CYP,2024,32870.0,1.38,Developed
+Czechia,CZE,2024,29560.0,1.36,Developed
+Denmark,DNK,2024,72540.0,1.47,Developed
+Djibouti,DJI,2024,3640.0,2.618,Developing
+Dominica,DMA,2024,10230.0,1.48,Developing
+Dominican Republic,DOM,2024,10280.0,2.222,Developing
+Ecuador,ECU,2024,6430.0,1.806,Developing
+"Egypt, Arab Rep.",EGY,2024,3510.0,2.735,Developing
+El Salvador,SLV,2024,5120.0,1.768,Developing
+Equatorial Guinea,GNQ,2024,4740.0,4.116,Developing
+Estonia,EST,2024,28880.0,1.18,Developed
+Eswatini,SWZ,2024,3590.0,2.718,Developing
+Ethiopia,ETH,2024,1100.0,3.909,Developing
+Euro area,EMU,2024,44691.4787889803,1.34667930848404,Developing
+Faroe Islands,FRO,2024,73070.0,1.9129,Developing
+Fiji,FJI,2024,5820.0,2.27,Developing
+Finland,FIN,2024,51650.0,1.25,Developed
+France,FRA,2024,45160.0,1.61,Developed
+French Polynesia,PYF,2024,23930.0,1.491,Developing
+Gabon,GAB,2024,7790.0,3.592,Developing
+"Gambia, The",GMB,2024,880.0,3.907,Developing
+Georgia,GEO,2024,8110.0,1.802,Transitioning
+Germany,DEU,2024,55090.0,1.36,Developed
+Ghana,GHA,2024,2310.0,3.344,Developing
+Greece,GRC,2024,22730.0,1.24,Developed
+Grenada,GRD,2024,10510.0,1.472,Developing
+Guatemala,GTM,2024,5780.0,2.287,Developing
+Guinea,GIN,2024,1440.0,4.131,Developing
+Guinea-Bissau,GNB,2024,990.0,3.757,Developing
+Guyana,GUY,2024,20140.0,2.395,Developing
+Haiti,HTI,2024,1760.0,2.625,Developing
+Honduras,HND,2024,3020.0,2.476,Developing
+"Hong Kong SAR, China",HKG,2024,57070.0,0.841,Developing
+Hungary,HUN,2024,20770.0,1.41,Developed
+Iceland,ISL,2024,82200.0,1.56,Developed
+India,IND,2024,2650.0,1.962,Developing
+Indonesia,IDN,2024,4910.0,2.115,Developing
+"Iran, Islamic Rep.",IRN,2024,5130.0,1.684,Developing
+Iraq,IRQ,2024,6030.0,3.221,Developing
+Ireland,IRL,2024,80650.0,1.47,Developed
+Israel,ISR,2024,52910.0,2.87,Developing
+Italy,ITA,2024,38590.0,1.18,Developed
+Jamaica,JAM,2024,7210.0,1.351,Developing
+Japan,JPN,2024,36000.0,1.15,Developed
+Jordan,JOR,2024,4430.0,2.604,Developing
+Kazakhstan,KAZ,2024,12090.0,2.984,Transitioning
+Kenya,KEN,2024,2090.0,3.167,Developing
+Kiribati,KIR,2024,3660.0,3.124,Developing
+"Korea, Rep.",KOR,2024,36750.0,0.748,Developed
+Kosovo,XKX,2024,6910.0,1.538,Developing
+Kuwait,KWT,2024,40770.0,1.56,Developing
+Kyrgyz Republic,KGZ,2024,2190.0,2.6,Transitioning
+Lao PDR,LAO,2024,2000.0,2.397,Developing
+Latvia,LVA,2024,21630.0,1.24,Developed
+Lesotho,LSO,2024,1180.0,2.664,Developing
+Liberia,LBR,2024,760.0,3.864,Developing
+Libya,LBY,2024,6890.0,2.298,Developing
+Lithuania,LTU,2024,27150.0,1.11,Developed
+Luxembourg,LUX,2024,84650.0,1.25,Developed
+Madagascar,MDG,2024,510.0,3.912,Developing
+Malawi,MWI,2024,570.0,3.59,Developing
+Malaysia,MYS,2024,11650.0,1.543,Developing
+Maldives,MDV,2024,11640.0,1.56,Developing
+Mali,MLI,2024,1030.0,5.51,Developing
+Malta,MLT,2024,36730.0,1.01,Developed
+Marshall Islands,MHL,2024,8500.0,2.864,Developing
+Mauritania,MRT,2024,2120.0,4.625,Developing
+Mauritius,MUS,2024,12970.0,1.44,Developing
+Mexico,MEX,2024,12850.0,1.892,Developing
+"Micronesia, Fed. Sts.",FSM,2024,4240.0,2.743,Developing
+Moldova,MDA,2024,6880.0,1.726,Transitioning
+Mongolia,MNG,2024,5380.0,2.5,Developing
+Montenegro,MNE,2024,12210.0,1.8,Transitioning
+Morocco,MAR,2024,3840.0,2.208,Developing
+Mozambique,MOZ,2024,550.0,4.69,Developing
+Myanmar,MMR,2024,1210.0,2.098,Developing
+Namibia,NAM,2024,4240.0,3.211,Developing
+Nauru,NRU,2024,20400.0,3.29,Developing
+Nepal,NPL,2024,1470.0,1.961,Developing
+Netherlands,NLD,2024,62520.0,1.43,Developed
+New Caledonia,NCL,2024,30070.0,1.964,Developing
+New Zealand,NZL,2024,47580.0,1.57,Developed
+Nicaragua,NIC,2024,2510.0,2.206,Developing
+Niger,NER,2024,680.0,5.935,Developing
+Nigeria,NGA,2024,1700.0,4.382,Developing
+North Macedonia,MKD,2024,8300.0,1.4,Transitioning
+Norway,NOR,2024,98170.0,1.45,Developed
+Oman,OMN,2024,19520.0,2.508,Developing
+Pakistan,PAK,2024,1430.0,3.547,Developing
+Panama,PAN,2024,18010.0,2.106,Developing
+Papua New Guinea,PNG,2024,2900.0,3.072,Developing
+Paraguay,PRY,2024,6300.0,2.416,Developing
+Peru,PER,2024,7500.0,1.965,Developing
+Philippines,PHL,2024,4470.0,1.894,Developing
+Poland,POL,2024,21590.0,1.14,Developed
+Portugal,PRT,2024,26910.0,1.41,Developed
+Puerto Rico (US),PRI,2024,25860.0,0.92,Developing
+Qatar,QAT,2024,77290.0,1.717,Developing
+Romania,ROU,2024,17600.0,1.39,Developed
+Russian Federation,RUS,2024,15320.0,1.418,Transitioning
+Rwanda,RWA,2024,1040.0,3.645,Developing
+Samoa,WSM,2024,5040.0,3.801,Developing
+Sao Tome and Principe,STP,2024,2850.0,3.596,Developing
+Saudi Arabia,SAU,2024,35630.0,2.308,Developing
+Senegal,SEN,2024,1680.0,3.765,Developing
+Serbia,SRB,2024,11610.0,1.64,Transitioning
+Seychelles,SYC,2024,17460.0,1.85,Developing
+Sierra Leone,SLE,2024,820.0,3.703,Developing
+Singapore,SGP,2024,74750.0,0.97,Developing
+Sint Maarten (Dutch part),SXM,2024,38950.0,1.44,Developing
+Slovak Republic,SVK,2024,23560.0,1.46,Developed
+Slovenia,SVN,2024,31790.0,1.52,Developed
+Solomon Islands,SLB,2024,1910.0,3.513,Developing
+"Somalia, Fed. Rep.",SOM,2024,620.0,6.013,Developing
+Spain,ESP,2024,33550.0,1.1,Developed
+Sri Lanka,LKA,2024,3860.0,1.952,Developing
+St. Kitts and Nevis,KNA,2024,22470.0,1.526,Developing
+St. Lucia,LCA,2024,12640.0,1.385,Developing
+St. Vincent and the Grenadines,VCT,2024,11060.0,1.761,Developing
+Sudan,SDN,2024,710.0,4.264,Developing
+Suriname,SUR,2024,5690.0,2.231,Developing
+Sweden,SWE,2024,58190.0,1.43,Developed
+Switzerland,CHE,2024,95220.0,1.29,Developed
+Tajikistan,TJK,2024,1650.0,3.036,Transitioning
+Tanzania,TZA,2024,1210.0,4.541,Developing
+Thailand,THA,2024,7100.0,1.204,Developing
+Timor-Leste,TLS,2024,1650.0,2.627,Developing
+Togo,TGO,2024,1080.0,4.121673,Developing
+Tunisia,TUN,2024,3880.0,1.818,Developing
+Turkiye,TUR,2024,13460.0,1.48,Developing
+Turkmenistan,TKM,2024,6510.0,2.661,Transitioning
+Turks and Caicos Islands,TCA,2024,36760.0,1.452,Developing
+Uganda,UGA,2024,1020.0,4.165,Developing
+Ukraine,UKR,2024,5210.0,0.988,Transitioning
+United Arab Emirates,ARE,2024,51550.0,1.213,Developing
+United Kingdom,GBR,2024,49470.0,1.551,Developed
+United States,USA,2024,83490.0,1.6265,Developed
+Uruguay,URY,2024,21650.0,1.397,Developing
+Uzbekistan,UZB,2024,3020.0,3.486,Transitioning
+Vanuatu,VUT,2024,3890.0,3.569,Developing
+"Venezuela, RB",VEN,2024,3820.0,2.077,Developing
+Viet Nam,VNM,2024,4490.0,1.895,Developing
+West Bank and Gaza,PSE,2024,2710.0,3.25,Developing
+Zambia,ZMB,2024,1220.0,4.036,Developing
+Zimbabwe,ZWE,2024,2400.0,3.674,Developing

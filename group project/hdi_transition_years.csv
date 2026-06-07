@@ -1,0 +1,204 @@
+country,transition_year,hdi_at_transition,latest_year,latest_hdi
+Iceland,1990,0.841,,
+Norway,1990,0.856,,
+Switzerland,1990,0.858,,
+Denmark,1990,0.844,,
+Germany,1990,0.834,,
+Sweden,1990,0.818,,
+Australia,1990,0.867,,
+"Hong Kong, China (SAR)",2000,0.839,,
+Netherlands,1990,0.855,,
+Belgium,1990,0.824,,
+Ireland,2000,0.869,,
+Finland,1990,0.823,,
+Singapore,1990,0.819,,
+United Kingdom,1990,0.812,,
+United Arab Emirates,2010,0.835,,
+Canada,1990,0.865,,
+Liechtenstein,2000,0.882,,
+New Zealand,1990,0.811,,
+United States,1990,0.878,,
+Korea (Republic of),2000,0.83,,
+Slovenia,2000,0.829,,
+Austria,1990,0.832,,
+Japan,1990,0.853,,
+Malta,2010,0.867,,
+Luxembourg,2000,0.861,,
+France,2000,0.852,,
+Israel,2000,0.839,,
+Spain,2000,0.833,,
+Czechia,2000,0.817,,
+Italy,2000,0.849,,
+San Marino,2000,0.881,,
+Andorra,2000,0.825,,
+Cyprus,2000,0.808,,
+Greece,2000,0.828,,
+Poland,2000,0.801,,
+Estonia,2010,0.868,,
+Saudi Arabia,2010,0.801,,
+Bahrain,2010,0.81,,
+Lithuania,2010,0.854,,
+Portugal,2010,0.836,,
+Croatia,2010,0.831,,
+Latvia,2010,0.833,,
+Qatar,2010,0.834,,
+Slovakia,2010,0.851,,
+Chile,2010,0.823,,
+Hungary,2010,0.838,,
+Argentina,2010,0.844,,
+Montenegro,2010,0.815,,
+Uruguay,2015,0.818,,
+Oman,2010,0.804,,
+Türkiye,2015,0.821,,
+Kuwait,2010,0.812,,
+Antigua and Barbuda,2010,0.828,,
+Seychelles,2015,0.819,,
+Bulgaria,2015,0.824,,
+Romania,2010,0.822,,
+Georgia,2015,0.807,,
+Saint Kitts and Nevis,2015,0.83,,
+Panama,2015,0.803,,
+Brunei Darussalam,2010,0.83,,
+Kazakhstan,2015,0.819,,
+Costa Rica,2015,0.803,,
+Serbia,2015,0.802,,
+Russian Federation,2010,0.808,,
+Belarus,2010,0.803,,
+Bahamas,2010,0.801,,
+Malaysia,2015,0.8,,
+North Macedonia,2022,0.811,,
+Armenia,2022,0.801,,
+Barbados,2015,0.8,,
+Albania,2022,0.806,,
+Trinidad and Tobago,2015,0.808,,
+Mauritius,2023,0.806,,
+Bosnia and Herzegovina,2023,0.804,,
+Iran (Islamic Republic of),Not yet developed,,2023.0,0.799
+Saint Vincent and the Grenadines,Not yet developed,,2023.0,0.798
+Thailand,2021,0.8,,
+China,Not yet developed,,2023.0,0.797
+Peru,Not yet developed,,2023.0,0.794
+Grenada,Not yet developed,,2023.0,0.791
+Azerbaijan,Not yet developed,,2023.0,0.789
+Mexico,Not yet developed,,2023.0,0.789
+Colombia,Not yet developed,,2023.0,0.788
+Brazil,Not yet developed,,2023.0,0.786
+Palau,2015,0.802,,
+Moldova (Republic of),Not yet developed,,2023.0,0.785
+Ukraine,Not yet developed,,2023.0,0.779
+Ecuador,Not yet developed,,2023.0,0.777
+Dominican Republic,Not yet developed,,2023.0,0.776
+Guyana,Not yet developed,,2023.0,0.776
+Sri Lanka,Not yet developed,,2023.0,0.776
+Tonga,Not yet developed,,2023.0,0.769
+Maldives,Not yet developed,,2023.0,0.766
+Viet Nam,Not yet developed,,2023.0,0.766
+Turkmenistan,Not yet developed,,2023.0,0.764
+Algeria,Not yet developed,,2023.0,0.763
+Cuba,Not yet developed,,2023.0,0.762
+Dominica,Not yet developed,,2023.0,0.761
+Paraguay,Not yet developed,,2023.0,0.756
+Egypt,Not yet developed,,2023.0,0.754
+Jordan,Not yet developed,,2023.0,0.754
+Lebanon,Not yet developed,,2023.0,0.752
+Saint Lucia,Not yet developed,,2023.0,0.748
+Mongolia,Not yet developed,,2023.0,0.747
+Tunisia,Not yet developed,,2023.0,0.746
+South Africa,Not yet developed,,2023.0,0.741
+Uzbekistan,Not yet developed,,2023.0,0.74
+Bolivia (Plurinational State of),Not yet developed,,2023.0,0.733
+Gabon,Not yet developed,,2023.0,0.733
+Marshall Islands,Not yet developed,,2023.0,0.733
+Botswana,Not yet developed,,2023.0,0.731
+Fiji,Not yet developed,,2023.0,0.731
+Indonesia,Not yet developed,,2023.0,0.728
+Suriname,Not yet developed,,2023.0,0.722
+Belize,Not yet developed,,2023.0,0.721
+Libya,Not yet developed,,2023.0,0.721
+Jamaica,Not yet developed,,2023.0,0.72
+Kyrgyzstan,Not yet developed,,2023.0,0.72
+Philippines,Not yet developed,,2023.0,0.72
+Morocco,Not yet developed,,2023.0,0.71
+Venezuela (Bolivarian Republic of),Not yet developed,,2023.0,0.709
+Samoa,Not yet developed,,2023.0,0.708
+Nicaragua,Not yet developed,,2023.0,0.706
+Nauru,Not yet developed,,2023.0,0.703
+Bhutan,Not yet developed,,2023.0,0.698
+Eswatini (Kingdom of),Not yet developed,,2023.0,0.695
+Iraq,Not yet developed,,2023.0,0.695
+Tajikistan,Not yet developed,,2023.0,0.691
+Tuvalu,Not yet developed,,2023.0,0.689
+Bangladesh,Not yet developed,,2023.0,0.685
+India,Not yet developed,,2023.0,0.685
+El Salvador,Not yet developed,,2023.0,0.678
+Equatorial Guinea,Not yet developed,,2023.0,0.674
+"Palestine, State of",Not yet developed,,2023.0,0.674
+Cabo Verde,Not yet developed,,2023.0,0.668
+Namibia,Not yet developed,,2023.0,0.665
+Guatemala,Not yet developed,,2023.0,0.662
+Congo,Not yet developed,,2023.0,0.649
+Honduras,Not yet developed,,2023.0,0.645
+Kiribati,Not yet developed,,2023.0,0.644
+Sao Tome and Principe,Not yet developed,,2023.0,0.637
+Timor-Leste,Not yet developed,,2023.0,0.634
+Ghana,Not yet developed,,2023.0,0.628
+Kenya,Not yet developed,,2023.0,0.628
+Nepal,Not yet developed,,2023.0,0.622
+Vanuatu,Not yet developed,,2023.0,0.621
+Lao People's Democratic Republic,Not yet developed,,2023.0,0.617
+Angola,Not yet developed,,2023.0,0.616
+Micronesia (Federated States of),Not yet developed,,2023.0,0.615
+Myanmar,Not yet developed,,2023.0,0.609
+Cambodia,Not yet developed,,2023.0,0.606
+Comoros,Not yet developed,,2023.0,0.603
+Zimbabwe,Not yet developed,,2023.0,0.598
+Zambia,Not yet developed,,2023.0,0.595
+Cameroon,Not yet developed,,2023.0,0.588
+Solomon Islands,Not yet developed,,2023.0,0.584
+Côte d'Ivoire,Not yet developed,,2023.0,0.582
+Uganda,Not yet developed,,2023.0,0.582
+Rwanda,Not yet developed,,2023.0,0.578
+Papua New Guinea,Not yet developed,,2023.0,0.576
+Togo,Not yet developed,,2023.0,0.571
+Syrian Arab Republic,Not yet developed,,2023.0,0.564
+Mauritania,Not yet developed,,2023.0,0.563
+Nigeria,Not yet developed,,2023.0,0.56
+Tanzania (United Republic of),Not yet developed,,2023.0,0.555
+Haiti,Not yet developed,,2023.0,0.554
+Lesotho,Not yet developed,,2023.0,0.55
+Pakistan,Not yet developed,,2023.0,0.544
+Senegal,Not yet developed,,2023.0,0.53
+Gambia,Not yet developed,,2023.0,0.524
+Congo (Democratic Republic of the),Not yet developed,,2023.0,0.522
+Malawi,Not yet developed,,2023.0,0.517
+Benin,Not yet developed,,2023.0,0.515
+Guinea-Bissau,Not yet developed,,2023.0,0.514
+Djibouti,Not yet developed,,2023.0,0.513
+Sudan,Not yet developed,,2023.0,0.511
+Liberia,Not yet developed,,2023.0,0.51
+Eritrea,Not yet developed,,2023.0,0.503
+Guinea,Not yet developed,,2023.0,0.5
+Ethiopia,Not yet developed,,2023.0,0.497
+Afghanistan,Not yet developed,,2023.0,0.496
+Mozambique,Not yet developed,,2023.0,0.493
+Madagascar,Not yet developed,,2023.0,0.487
+Yemen,Not yet developed,,2023.0,0.47
+Sierra Leone,Not yet developed,,2023.0,0.467
+Burkina Faso,Not yet developed,,2023.0,0.459
+Burundi,Not yet developed,,2023.0,0.439
+Mali,Not yet developed,,2023.0,0.419
+Niger,Not yet developed,,2023.0,0.419
+Chad,Not yet developed,,2023.0,0.416
+Central African Republic,Not yet developed,,2023.0,0.414
+Somalia,Not yet developed,,2023.0,0.404
+South Sudan,Not yet developed,,2023.0,0.388
+Developing countries,Not yet developed,,2023.0,0.712
+Arab States,Not yet developed,,2023.0,0.719
+East Asia and the Pacific,Not yet developed,,2023.0,0.775
+Europe and Central Asia,2020,0.802,,
+Latin America and the Caribbean,Not yet developed,,2023.0,0.783
+South Asia,Not yet developed,,2023.0,0.672
+Sub-Saharan Africa,Not yet developed,,2023.0,0.568
+Least developed countries,Not yet developed,,2023.0,0.56
+Small island developing states,Not yet developed,,2023.0,0.739
+World,Not yet developed,,2023.0,0.756
