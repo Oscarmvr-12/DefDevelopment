@@ -6,7 +6,7 @@
 <meta content="Visualizing Global Development Through Demographic and Health Indicators" name="description"/>
 <meta content="development, social indicators, data visualization" name="keywords"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Visualizing Global Development Through Demographic and Health Indicators</title>
+<title>What Do Demographic and Health Indicators Reveal About Global Development?</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -244,11 +244,11 @@
 
     .hero-copy {
       max-width: 760px;
-      padding: 28px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
-      box-shadow: var(--shadow);
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      line-height: 1.45;
+      font-weight: 600;
     }
 
     .authors {
@@ -374,9 +374,11 @@
       margin-top: 0.7rem;
     }
 
-    .formula {
+.formula {
       color: var(--accent-dark);
       font-weight: 700;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
     }
 
     .media-grid {
@@ -805,7 +807,7 @@
       }
 
       .hero-copy {
-        padding: 22px;
+        margin-top: 16px;
       }
 
       .media-grid {
@@ -932,18 +934,18 @@
 <div class="hero-grid">
 <div>
 <p class="eyebrow" data-i18n="eyebrow">CDS 301 / 501 Data Visualization</p>
-<h1 data-i18n="heroTitle">Visualizing Global Development Through Demographic and Health Indicators</h1>
+<h1 data-i18n="heroTitle">What Do Demographic and Health Indicators Reveal About Global Development?</h1>
+<div class="hero-copy">
+<p data-i18n="heroCopy">
+          Visualizing Global Development Through Demographic and Health Indicators
+        </p>
+</div>
 <div aria-label="Authors and institution" class="authors">
 <span class="pill">Spring Park</span>
 <span class="pill">Joonseop Jang</span>
 <span class="pill">Oscar Molina Romualdo</span>
 <span class="pill">George Mason University Korea</span>
 </div>
-</div>
-<div class="hero-copy">
-<p data-i18n="heroCopy">
-          A compact visual study of how fertility, migration, infant mortality, aging, and service-sector employment complicate income-based definitions of development.
-        </p>
 </div>
 </div>
 </header>
@@ -994,6 +996,11 @@
 </div>
 <div class="glossary-grid">
 <article class="glossary-card glossary-card-wide">
+<h4 data-i18n="hdiTitle">Human Development Index (HDI)</h4>
+<p data-i18n="hdiText">A summary measure of human development. It measures average achievement in three basic dimensions: a long and healthy life, access to knowledge, and a decent standard of living.</p>
+<p class="formula" data-i18n="hdiFormula">HDI = (health index x education index x income index)^(1/3)</p>
+</article>
+<article class="glossary-card glossary-card-wide">
 <h4 data-i18n="gniTitle">GNI per capita</h4>
 <p data-i18n="gniP1">Gross National Income (GNI) is the total income earned by the residents of an economy during an accounting period. GNI per capita divides that income by the total population, making comparisons across countries easier.</p>
 <p class="formula" data-i18n="gniFormula1">GNI = GDP + income earned from abroad - income payable abroad</p>
@@ -1007,6 +1014,16 @@
 <article class="glossary-card">
 <h4 data-i18n="fertilityTermTitle">Fertility rate</h4>
 <p data-i18n="fertilityTermText">The average number of children a woman would have if current age-specific birth rates remained the same throughout her reproductive years.</p>
+</article>
+<article class="glossary-card">
+<h4 data-i18n="crudeBirthRateTitle">Crude birth rate</h4>
+<p data-i18n="crudeBirthRateText">The number of live births occurring during the year per 1,000 population estimated at midyear.</p>
+<p class="formula" data-i18n="crudeBirthRateFormula">Crude birth rate = (live births in 1 year / midyear total population) x 1,000</p>
+</article>
+<article class="glossary-card">
+<h4 data-i18n="crudeDeathRateTitle">Crude death rate</h4>
+<p data-i18n="crudeDeathRateText">The number of deaths occurring during the year per 1,000 population estimated at midyear.</p>
+<p class="formula" data-i18n="crudeDeathRateFormula">Crude death rate = (deaths in 1 year / midyear total population) x 1,000</p>
 </article>
 <article class="glossary-card">
 <h4 data-i18n="migrantShareTitle">Migrant share</h4>
@@ -1289,7 +1306,7 @@
 <script>
     const translations = {
       en: {
-        pageTitle: "Visualizing Global Development Through Demographic and Health Indicators",
+        pageTitle: "What Do Demographic and Health Indicators Reveal About Global Development?",
         metaDescription: "Visualizing Global Development Through Demographic and Health Indicators",
         brand: "Visualizing Global Development",
         navAbstract: "Abstract",
@@ -1299,8 +1316,8 @@
         navMortality: "Mortality",
         navSources: "Sources",
         eyebrow: "CDS 301 / 501 Data Visualization",
-        heroTitle: "Visualizing Global Development Through Demographic and Health Indicators",
-        heroCopy: "A compact visual study of how fertility, migration, infant mortality, aging, and service-sector employment complicate income-based definitions of development.",
+        heroTitle: "What Do Demographic and Health Indicators Reveal About Global Development?",
+        heroCopy: "Visualizing Global Development Through Demographic and Health Indicators",
         abstractKicker: "Project Overview",
         abstractTitle: "Abstract",
         abstractP1: "Traditional definitions of developed countries often rely heavily on economic measures such as Gross National Income (GNI) per capita. However, income alone may not fully capture the broader social, demographic, and health conditions associated with development. This project explores whether social indicators such as fertility, infant mortality, migration, and demographic inequality provide additional insight into how development should be understood and classified.",
@@ -1312,6 +1329,9 @@
         motivationP2: "This project compares several indicators to ask a broader question: what becomes visible when development is treated as a multidimensional process rather than a single ranking? The visualizations below connect income-based classifications with fertility, migration, and infant mortality outcomes across countries and over time.",
         keywordsTitle: "Key Terms",
         keywordsIntro: "These definitions provide a quick reference for the measures and classifications used throughout the visualizations.",
+        hdiTitle: "Human Development Index (HDI)",
+        hdiText: "A summary measure of human development. It measures average achievement in three basic dimensions: a long and healthy life, access to knowledge, and a decent standard of living.",
+        hdiFormula: "HDI = (health index x education index x income index)^(1/3)",
         gniTitle: "GNI per capita",
         gniP1: "Gross National Income (GNI) is the total income earned by the residents of an economy during an accounting period. GNI per capita divides that income by the total population, making comparisons across countries easier.",
         gniFormula1: "GNI = GDP + income earned from abroad - income payable abroad",
@@ -1321,6 +1341,12 @@
         developmentGroupsText: "The project compares developed economies, economies in transition, and developing economies using United Nations classifications. These categories provide a useful framework, but they do not capture every social difference within each group.",
         fertilityTermTitle: "Fertility rate",
         fertilityTermText: "The average number of children a woman would have if current age-specific birth rates remained the same throughout her reproductive years.",
+        crudeBirthRateTitle: "Crude birth rate",
+        crudeBirthRateText: "The number of live births occurring during the year per 1,000 population estimated at midyear.",
+        crudeBirthRateFormula: "Crude birth rate = (live births in 1 year / midyear total population) x 1,000",
+        crudeDeathRateTitle: "Crude death rate",
+        crudeDeathRateText: "The number of deaths occurring during the year per 1,000 population estimated at midyear.",
+        crudeDeathRateFormula: "Crude death rate = (deaths in 1 year / midyear total population) x 1,000",
         migrantShareTitle: "Migrant share",
         migrantShareText: "The share of a country's population made up of international migrants. It can reflect labor demand, mobility, conflict, geography, and regional integration.",
         infantMortalityTitle: "Infant mortality rate",
@@ -1403,7 +1429,7 @@
         footer2: "Licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Template inspiration from the <a href=\"https://utkuozbulak.github.io/cds_301_template_website/\" target=\"_blank\" rel=\"noopener\">CDS 301 Template Website</a> and <a href=\"https://github.com/nerfies/nerfies.github.io\" target=\"_blank\" rel=\"noopener\">Nerfies project site</a>."
       },
       ko: {
-        pageTitle: "인구 및 보건 지표로 살펴보는 세계 발전",
+        pageTitle: "인구 및 보건 지표는 세계 발전에 대해 무엇을 보여주는가?",
         metaDescription: "인구 및 보건 지표로 살펴보는 세계 발전",
         brand: "세계 발전 시각화",
         navAbstract: "초록",
@@ -1413,8 +1439,8 @@
         navMortality: "영아 사망률",
         navSources: "자료",
         eyebrow: "CDS 301 / 501 데이터 시각화",
-        heroTitle: "인구 및 보건 지표로 살펴보는 세계 발전",
-        heroCopy: "출산율, 이주, 영아 사망률, 고령화, 서비스업 고용이 소득 중심의 발전국가 정의를 어떻게 더 복합적으로 만드는지 살펴보는 시각화 프로젝트입니다.",
+        heroTitle: "인구 및 보건 지표는 세계 발전에 대해 무엇을 보여주는가?",
+        heroCopy: "인구 및 보건 지표로 살펴보는 세계 발전",
         abstractKicker: "프로젝트 개요",
         abstractTitle: "초록",
         abstractP1: "선진국에 대한 전통적인 정의는 1인당 국민총소득(GNI)과 같은 경제 지표에 크게 의존하는 경우가 많습니다. 그러나 소득만으로는 발전과 관련된 더 넓은 사회적, 인구학적, 보건 조건을 충분히 설명하기 어렵습니다. 이 프로젝트는 출산율, 영아 사망률, 이주, 인구학적 불평등과 같은 사회 지표가 발전을 이해하고 분류하는 데 어떤 추가적인 통찰을 제공하는지 탐구합니다.",
@@ -1426,6 +1452,9 @@
         motivationP2: "이 프로젝트는 여러 지표를 비교하여 더 넓은 질문을 탐구합니다. 발전을 하나의 순위가 아니라 다차원적인 과정으로 볼 때 무엇이 새롭게 드러날까요? 아래 시각화는 소득 기반 분류를 출산율, 이주, 영아 사망률 결과와 연결하여 국가별·시기별 변화를 보여줍니다.",
         keywordsTitle: "핵심 용어",
         keywordsIntro: "아래 정의는 시각화에서 사용되는 주요 지표와 분류 체계를 빠르게 이해하기 위한 참고 자료입니다.",
+        hdiTitle: "인간개발지수(HDI)",
+        hdiText: "인간 개발을 요약하는 지표입니다. 길고 건강한 삶, 지식에 대한 접근, 적절한 생활 수준이라는 세 가지 기본 차원에서 평균 성취도를 측정합니다.",
+        hdiFormula: "HDI = (보건 지수 x 교육 지수 x 소득 지수)^(1/3)",
         gniTitle: "1인당 국민총소득(GNI)",
         gniP1: "국민총소득(GNI)은 일정 기간 동안 한 경제권의 거주자가 벌어들인 총소득입니다. 1인당 GNI는 이 소득을 전체 인구로 나눈 값으로, 국가 간 비교를 더 쉽게 합니다.",
         gniFormula1: "GNI = GDP + 해외에서 벌어들인 소득 - 해외에 지급한 소득",
@@ -1435,6 +1464,12 @@
         developmentGroupsText: "이 프로젝트는 유엔 분류를 사용하여 선진 경제, 전환기 경제, 개발도상 경제를 비교합니다. 이러한 범주는 유용한 분석 틀이지만 각 그룹 안의 모든 사회적 차이를 설명하지는 않습니다.",
         fertilityTermTitle: "출산율",
         fertilityTermText: "현재의 연령별 출산율이 가임 기간 동안 유지된다고 가정할 때 여성 한 명이 낳을 것으로 예상되는 평균 자녀 수입니다.",
+        crudeBirthRateTitle: "조출생률",
+        crudeBirthRateText: "특정 연도에 발생한 출생아 수를 해당 연도 중간 시점의 인구 1,000명당으로 나타낸 지표입니다.",
+        crudeBirthRateFormula: "조출생률 = (1년간 출생아 수 / 중간 시점 전체 인구) x 1,000",
+        crudeDeathRateTitle: "조사망률",
+        crudeDeathRateText: "특정 연도에 발생한 사망자 수를 해당 연도 중간 시점의 인구 1,000명당으로 나타낸 지표입니다.",
+        crudeDeathRateFormula: "조사망률 = (1년간 사망자 수 / 중간 시점 전체 인구) x 1,000",
         migrantShareTitle: "이주민 비중",
         migrantShareText: "한 국가의 전체 인구 중 국제 이주민이 차지하는 비율입니다. 노동 수요, 이동성, 분쟁, 지리적 조건, 지역 통합 등을 반영할 수 있습니다.",
         infantMortalityTitle: "영아 사망률",
